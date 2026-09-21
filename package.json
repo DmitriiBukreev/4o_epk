@@ -6,6 +6,7 @@
     "astro": "astro",
     "dev": "wix dev",
     "build": "wix build",
+    "build:vercel": "astro build --config astro.config.vercel.mjs",
     "wix": "wix",
     "preview": "wix preview",
     "release": "wix release",
