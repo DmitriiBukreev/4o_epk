@@ -15,6 +15,7 @@
 				<a href="#about">EPK</a>
 				<a href="#music">Music</a>
 				<a href="#live">Live</a>
+				<a href="#history">History</a>
 				<a href="#assets">Assets</a>
 			</nav>
 			<a class="booking-link" href="#booking">Booking</a>
@@ -37,10 +38,13 @@
 				<p class="press-text">
 					4 Oceans is a Berlin-based modern metalcore band, formed in 2020 as a
 					fully DIY project. The self-produced debut EP <em>First Wave</em> was
-					followed by singles featuring Dominik of Cypecore and Egor Erushin of
-					Abyss Watching Me. After touring Germany and Italy and passing 160,000
-					Spotify streams, the band returns in 2026 with a renewed line-up and a
-					new musical direction.
+					followed by collaborations with Dominik Christoph (Cypecore), Egor
+					Erushin (Abyss Watching Me) and Alex Kerski. The band's early vocal
+					chapter included Enrico Tiberi, now of The Ocean Collective. After
+					sharing stages with Space Of Variations, Sharks In Your Mouth and
+					VIANOVA across Germany and Italy, and passing 160,000 Spotify streams,
+					the band returns in 2026 with a renewed line-up and a new musical
+					direction.
 				</p>
 				<dl class="facts">
 					<div>
@@ -133,6 +137,43 @@
 					<img src="/images/press-live.jpg" alt="4 Oceans performing live under red lights" loading="lazy" />
 					<figcaption><a href="/images/press-live.jpg" download>Press photo 02</a></figcaption>
 				</figure>
+			</div>
+		</div>
+	</section>
+
+	<section class="history" id="history" aria-labelledby="history-title">
+		<div class="section-inner">
+			<div class="section-heading-row history-heading">
+				<div class="section-title">
+					<p>Selected history</p>
+					<h2 id="history-title">Stages &amp; collaborators</h2>
+				</div>
+				<p class="history-intro">11 dates &middot; Berlin / Germany / Italy &middot; 2021&ndash;2026</p>
+			</div>
+			<div class="history-grid">
+				<div class="history-highlight">
+					<p class="history-label">Selected stages</p>
+					<p class="history-copy">
+						Space Of Variations, Sharks In Your Mouth, VIANOVA, and many more.
+					</p>
+					<p class="history-copy">
+						Recorded collaborations include <strong>Cypecore</strong>,
+						<strong>Abyss Watching Me</strong>, and <strong>Alex Kerski</strong>.
+					</p>
+				</div>
+				<ol class="gig-list" aria-label="Past gigs">
+					<li><time datetime="2021-11-13">13.11.21</time><div><strong>Franz Club</strong><span>Berlin &middot; with Space Of Variations</span></div></li>
+					<li><time datetime="2022-04-01">01.04.22</time><div><strong>Club show</strong><span>Eberswalde</span></div></li>
+					<li><time datetime="2022-04-02">02.04.22</time><div><strong>Bloodbrothers Bash Fest</strong><span>Fulda</span></div></li>
+					<li><time datetime="2022-04-30">30.04.22</time><div><strong>Legend Club</strong><span>Milano &middot; with Sharks In Your Mouth / Deep As Ocean</span></div></li>
+					<li><time datetime="2022-10-06">06.10.22</time><div><strong>Rock At Sage</strong><span>Berlin</span></div></li>
+					<li><time datetime="2022-11-26">26.11.22</time><div><strong>Die Spirale</strong><span>Berlin &middot; with VIANOVA</span></div></li>
+					<li><time datetime="2023-01-23">23.01.23</time><div><strong>What's Your Metal #1</strong><span>Lindenpark</span></div></li>
+					<li><time datetime="2023-07-28">28.07.23</time><div><strong>Burning Q Fest</strong><span>Freissenbuettel</span></div></li>
+					<li><time datetime="2023-09-10">10.09.23</time><div><strong>Summerside Fest</strong><span>Kirche Von Unten, Berlin &middot; ATOK Berlin</span></div></li>
+					<li><time datetime="2023-11-04">04.11.23</time><div><strong>Autumn Bash</strong><span>Die Linse, Berlin &middot; ATOK Berlin</span></div></li>
+					<li><time datetime="2026-04-18">18.04.26</time><div><strong>Die Spirale</strong><span>Berlin &middot; with Ancient Fragments</span></div></li>
+				</ol>
 			</div>
 		</div>
 	</section>
@@ -481,6 +522,112 @@
 		color: var(--ink);
 	}
 
+	.history {
+		border-top: 1px solid var(--line-light);
+		background: #101212;
+		color: var(--paper);
+		padding: clamp(42px, 5vw, 68px) 0;
+	}
+
+	.history-heading {
+		margin-bottom: 26px;
+	}
+
+	.history-intro {
+		margin: 0 0 4px;
+		color: var(--muted);
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.history-grid {
+		display: grid;
+		grid-template-columns: minmax(220px, 0.64fr) minmax(0, 1.36fr);
+		gap: clamp(34px, 7vw, 100px);
+	}
+
+	.history-highlight {
+		align-self: start;
+		border-top: 1px solid var(--line-light);
+		border-bottom: 1px solid var(--line-light);
+		padding: 18px 0 22px;
+	}
+
+	.history-label {
+		margin: 0 0 16px;
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	.history .section-title h2 {
+		font-size: clamp(24px, 2.4vw, 36px);
+		line-height: 1;
+	}
+
+	.history-copy {
+		max-width: 360px;
+		margin: 28px 0 0;
+		color: var(--muted);
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.history-copy + .history-copy {
+		margin-top: 12px;
+	}
+
+	.history-copy strong {
+		color: var(--paper);
+		font-weight: 700;
+	}
+
+	.gig-list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 24px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.gig-list li {
+		display: grid;
+		grid-template-columns: 66px minmax(0, 1fr);
+		gap: 12px;
+		border-top: 1px solid var(--line-light);
+		padding: 12px 0;
+	}
+
+	.gig-list time {
+		color: var(--muted);
+		font-size: 10px;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		line-height: 1.3;
+	}
+
+	.gig-list strong,
+	.gig-list span {
+		display: block;
+	}
+
+	.gig-list strong {
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+
+	.gig-list span {
+		margin-top: 3px;
+		color: var(--muted);
+		font-size: 11px;
+		line-height: 1.35;
+	}
+
 	.assets {
 		background: var(--ink);
 		padding-bottom: 64px;
@@ -565,6 +712,11 @@
 			gap: 38px;
 		}
 
+		.history-grid {
+			grid-template-columns: 1fr;
+			gap: 38px;
+		}
+
 		.footer-inner {
 			align-items: flex-start;
 		}
@@ -628,6 +780,14 @@
 			flex-direction: column;
 			gap: 26px;
 			margin-bottom: 28px;
+		}
+
+		.history {
+			padding: 52px 0;
+		}
+
+		.gig-list {
+			grid-template-columns: 1fr;
 		}
 
 		.streaming-links {
